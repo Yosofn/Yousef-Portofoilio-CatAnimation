@@ -1,0 +1,152 @@
+.Iconhover:hover{
+
+    color: #ff206e;
+}
+:root {
+    --mainColor: #ff206e;
+    --mainTextColor: #545454;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--mainTextColor);
+}
+
+.text-main {
+    color: var(--mainColor) !important;
+}
+#home {
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #f1f1f144;
+}
+
+
+
+#about {
+    background-image: url(../images/light_dot.jpeg);
+}
+
+
+ .section-title h2{
+    font-size: 5rem;
+    color: #f1f1f1;
+    font-weight: 900;
+
+}
+
+.section-title h3 {
+        font-weight: 900;
+         font-size: 2.5rem;
+}
+
+#about .about-desc p a {
+    color: #000;
+}
+
+
+
+#service {
+    background-image: url(../images/dark_dot.jpeg);
+}
+
+
+#service .section-title h2 {
+    color: #222;
+    letter-spacing: 10px;
+}
+#service .section-title h3 {
+    color: white;
+}
+
+#service .services-container h3 {
+    position: relative;
+}
+#service .services-container h3::after {
+    content:"";
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    background-color: var(--mainColor);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+#service .services-container .icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    box-shadow: 0 3px 30px rgb(0 0 0 / 30%);
+    transition: color 1s;
+}
+
+#service .service-item:hover .icon {
+    color: var(--mainColor) !important;
+}
+
+#service .service-item:hover h3::after {
+    width: 25%;
+}
+
+
+
+
+#portfolio {
+    background-image: url(../images/light_dot.jpeg);
+}
+
+#portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent !important;
+    color: var(--mainColor);
+}
+
+.portfolio-caption {
+    width: 95%;
+    left: 2.5%;
+    height: 95%;
+    background-color: #ffffffcc;
+    bottom: 100%;
+    transition: 1s;
+}
+
+.portfolio-item:hover .portfolio-caption{
+bottom: 5%;
+}
+
+
+.portfolio-item img {
+    filter: blur(1px);
+}
+
+#slider .img-container {
+    width: 7rem;
+    height: 7rem;
+    
+}
+
+#slider .carousel-indicators [data-bs-target]{
+        border-radius: 50%;
+    height: 20px;
+    width: 20px;
+        background-color: #a7a0a0;
+}
+
+
+.testAnimation {
+    background-image: url(../images/gatito_pushui.svg);
+     height: 297px; 
+    width: 507.5px;
+        animation: sprite-animation 1.2s steps(16,end) infinite;
+}
+
+@keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -8120px 0; }
+    }
